@@ -1,13 +1,13 @@
 var webpack = require('webpack')
 var webpackDevMiddleware = require('webpack-dev-middleware')
 var webpackHotMiddleware = require('webpack-hot-middleware')
-var config = require('./webpack.config')
+var config = require('./webpack.server.config')
 var express = require('express');
 var request = require('request');
 
 var app = new (require('express'))()
 var bodyParser = require('body-parser');
-var port = 3000
+var port = 4000
 
 var compiler = webpack(config)
 app.use('/lib', express.static('lib'))

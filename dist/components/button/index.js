@@ -1,3 +1,4 @@
+exports["button/index.js"] =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};

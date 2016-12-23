@@ -1,15 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,minimal-ui" />
     <title></title>
+    <link rel="stylesheet" type="text/css" href="uploadify.css">
+    <script type="text/javascript" src="http://jockjs.danny.front.anjuke.test/xjs/base/cookie/logger.tracker/site.anjuke/112.js"></script>
+    <script type="text/javascript">
+    J.site.init({
+        page: 'test'
+    });
+    </script>
 </head>
+
 <body>
-<div>
-    hello world!
-</div>
-<script type="text/javascript" src="/static/bundle.js" charset="utf-8"></script>
-<script type="text/javascript" src="/vendor/zepto.min.js" charset="utf-8"></script>
-<!-- <script type="text/javascript" src="/static/bundle.js" charset="utf-8"></script> -->
+    <div id="hello">
+        hello world!
+    </div>
+    <form>
+        <div id="queue"></div>
+        <input id="file_uploader_1" name="file_upload" type="file" multiple="true">
+        <label id="avatar-uploader" style="display: none;" width="140" height="32"></label>
+    </form>
+    <pre id="mockjs-view"></pre>
+    <a href="http://www.anjuke.com" x-soj="aaaa">aaaaaa</a>
+    <div class="hammer-wrap">
+        <span class="ld-label">3# 在售</span>
+        <span class="ld-label">3# 在售</span>
+        <span class="ld-label">3# 在售</span> ...
+        <img src="" alt="">
+    </div>
+    <button class="t-btn1" x-click="trackevent:{action: aaaa,cp:{a:1,ab:{c:2}}}">show the alert1</button>
+    <button class="t-btn2" x-track="{cp:{a:1,ab:{c:2}}}">show the alert2</button>
+
+    <button class="t-btn3" x-exposure="{
+        action:exposure_name_1,
+        cp:{'exposure' : [
+            {
+                propid:648,
+                ftype:3,
+                userid:123456,
+                utype:1,
+                hptype:2,
+                index:5
+            },
+            {
+                lpid:648,
+                fype:4,
+                index:6
+            }
+        ],
+        'exposure_type' : 0 }
+    }">exposure soj</button>
+    <a href="tel:421421241" class="contact-me" x-trackphone="broker" x-trackphone-tag="1">联系我</a>
+    <input type="text" name="kw" class="kw" id="glb_search0" maxlength="100" autocomplete="off" placeholder="请输入房源特征、地址、小区、楼盘名或…" value="">
+    <script type="text/template" id="tpl-list">
+        <ul>
+            {{ for(var i= 0;i<items.length;i++){ }}
+            <li class="item" x-exposure='{{=items[i].exp}}'>list--item__{{=i}}</li>
+            {{ } }}
+        </ul>
+
+    </script>
+    <script type="text/javascript" src="/lib/vendor/zepto.min.js" charset="utf-8"></script>
+<!--     <script type="text/javascript" src="/lib/vendor/jquery.js" charset="utf-8"></script>
+ -->    <!-- <script type="text/javascript" src="/lib/vendor/uploader_swf/jquery.uploadify.js" charset="utf-8"></script> -->
+
+<!-- <script type="text/javascript" src="http://pages.danny.fang.front.anjuke.test/swf/uploadify-2.1.0/swfobject_1.js"></script>
+<script type="text/javascript" src="http://pages.danny.fang.front.anjuke.test/js/jquery-1.3.2.1/jquery.uploadify.v2.1.1.min.js"></script>
+ --><!--     <script type="text/javascript" src="/lib/vendor/zepto.min.js" charset="utf-8"></script>
+ -->
+<script type="text/javascript" src="http://jockjs.danny.front.anjuke.test/xjs/xplus.xsoj/113.js"></script>
+ <script type="text/javascript" src="/static/bundle.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    //J.ready(
+    // J.use(['ui.panel'],['ui.panel_def'], function(){
+    //     // window.panel = new  J.ui.panel();
+    //     var panel = new J.ui.panel({
+    //                 title:'aaa',
+    //                 content:'<span>bbb</span>',
+    //                 ok:'OK',
+    //                 cancel:'Cancel'
+
+    //             });
+
+    // })
+
+
+    // (function(){
+    //     var panel = new J.ui.panel({
+    //                 title:'aaa',
+    //                 content:'<span>bbb</span>',
+    //                 ok:'OK',
+    //                 cancel:'Cancel'
+
+    //     });
+
+    //     console.log('require success');
+    // }.require(['panel']));
+
+
+    // var jsub =new J.subscribe();
+    </script>
 </body>
+
 </html>
